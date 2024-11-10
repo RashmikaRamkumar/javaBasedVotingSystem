@@ -1,0 +1,35 @@
+mvn clean install
+mvn exec:java "-Dexec.mainClass=com.jaisanth.voting.VotingSystem"
+
+
+Steps to Set Up Your Environment
+
+Install JDK:  https://maven.apache.org/download.cgi
+Follow the installation instructions for your operating system.
+Set the JAVA_HOME environment variable if necessary.
+
+Install Maven: https://maven.apache.org/download.cgi
+Download and extract Maven.
+Add the bin directory of Maven to your system's PATH.
+
+Install MongoDB:
+
+https://www.mongodb.com/try/download/community
+https://www.mongodb.com/cloud/atlas
+
+Follow the installation instructions for your operating system.
+Start the MongoDB server using the command:
+bash
+    mongod
+
+Set Up Your Project:
+Create a new directory for your project or navigate to your existing project directory.
+Ensure your pom.xml file has all required dependencies.
+Run the following command in your project directory to download dependencies and compile your project:
+bash
+    mvn clean install
+
+Run Your Application:
+You can run your application using Maven with:
+bash
+    mvn exec:java -Dexec.mainClass="com.jaisanth.voting.VotingSystem"
